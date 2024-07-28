@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url('../image/1802071.webp') center center;
+    background-size: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.title {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.col {
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.col div {
+    width: 250px;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: transparent;
+    border-radius: 5px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+
+    .col {
+        flex-direction: row; /* Ensure items are in a row */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        justify-content: space-around; /* Space items evenly */
+        align-items: center; /* Center align the items vertically */
+    }
+
+    .col div {
+        width: 50px; /* Adjust width to fit smaller screens */
+        margin: 5px; /* Add spacing between items */
+    }
+
+    input {
+        width: 100%; /* Make inputs fill the width of their container */
+        font-size: 20px; /* Reduce font size for smaller screens */
+        height: 40px; /* Adjust height for smaller screens */
+    }
+
+    label {
+        font-size: 12px; /* Adjust label font size for better fit */
+    }
+}
+
